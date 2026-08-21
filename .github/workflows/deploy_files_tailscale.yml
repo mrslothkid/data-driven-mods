@@ -1,0 +1,35 @@
+name: Deploy Files via Tailscale SSH (Auth Key)
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 1. Connect runner to Tailscale network using Auth Key
+      - name: Tailscale
+        uses: tailscale/github-action@v3
+        with:
+          authkey: ${{ secrets.TAILSCALE_AUTHKEY }}
+
+      # 2. Configure SSH client and host verification
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DEST_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.DEST_HOST }} >> ~/.ssh/known_hosts
+
+      # 3. Sync files directly using rsync
+      - name: Sync Files with rsync
+        run: |
+          rsync -avz --delete \
+            -e "ssh -i ~/.ssh/id_rsa" \
+            src/ config/ deploy.sh \
+            ${{ secrets.DEST_USER }}@${{ secrets.DEST_HOST }}:/var/www/my-app
