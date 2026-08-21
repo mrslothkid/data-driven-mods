@@ -19,12 +19,12 @@ jobs:
           authkey: ${{ secrets.KEY }}
 
       # 2. Configure SSH client and host verification
-      - name: Setup SSH
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.DEST_SSH_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.DEST_HOST }} >> ~/.ssh/known_hosts
+     # - name: Setup SSH
+        #run: |
+          #mkdir -p ~/.ssh
+          #echo "${{ secrets.DEST_SSH_KEY }}" > ~/.ssh/id_rsa
+          #chmod 600 ~/.ssh/id_rsa
+          #ssh-keyscan -H ${{ secrets.DEST_HOST }} >> ~/.ssh/known_hosts
 
       # 3. Sync files directly using rsync
       - name: Sync Files with rsync
