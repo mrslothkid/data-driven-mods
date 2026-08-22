@@ -16,7 +16,7 @@ jobs:
       - name: Tailscale
         uses: tailscale/github-action@v3
         with:
-          authkey: ${{ secrets.KEY }}
+          authkey: ${{ secrets.TAILSCALE_KEY }}
           
       # 2. Configure SSH client and host verification
       - name: Setup SSH
