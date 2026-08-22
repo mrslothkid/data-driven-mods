@@ -11,4 +11,4 @@ jobs:
       - name: Tailscale
         uses: tailscale/github-action@v4
         with:
-          authkey: ${{ secrets.KEY }}
+          authkey: ${{ secrets.TAILSCALE_KEY }}
