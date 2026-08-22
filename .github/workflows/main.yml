@@ -1,14 +1,14 @@
-name: Tailscale Setup
+#name: Tailscale Setup
 
-on:
-  push:
-    branches: [ main ]
+#on:
+#  push:
+#    branches: [ main ]
 
-jobs:
-  tailscale-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Tailscale
-        uses: tailscale/github-action@v4
-        with:
-          authkey: ${{ secrets.TAILSCALE_KEY }}
+#jobs:
+#  tailscale-job:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Tailscale
+#        uses: tailscale/github-action@v4
+#        with:
+#          authkey: ${{ secrets.TAILSCALE_KEY }}
