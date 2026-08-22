@@ -14,7 +14,7 @@ jobs:
 
       # 1. Connect runner to Tailscale network using Auth Key
       - name: Tailscale
-        uses: tailscale/github-action@v3
+        uses: tailscale/github-action@v4
         with:
           authkey: ${{ secrets.TAILSCALE_KEY }}
           
