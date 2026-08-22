@@ -33,3 +33,8 @@ jobs:
             -e "ssh -i /home/runner/.ssh/id_rsa" \
             mods \
             ${{ secrets.DEST_USER }}@${{ secrets.DEST_HOST }}:/home/isaac/minecraft_datadriven_smp/
+            rsync -Pavz --delete \
+            -e "ssh -i /home/runner/.ssh/id_rsa" \
+            datapacks \
+            ${{ secrets.DEST_USER }}@${{ secrets.DEST_HOST }}:/home/isaac/minecraft_datadriven_smp/world/
+
