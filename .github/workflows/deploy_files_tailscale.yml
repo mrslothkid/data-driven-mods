@@ -17,19 +17,19 @@ jobs:
         uses: tailscale/github-action@v3
         with:
           authkey: ${{ secrets.KEY }}
-
-       2. Configure SSH client and host verification
+          
+      # 2. Configure SSH client and host verification
       - name: Setup SSH
         run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.DEST_SSH_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.DEST_HOST }} >> ~/.ssh/known_hosts
+          mkdir -p /home/runner/.ssh
+          echo "${{ secrets.DEST_SSH_KEY }}" > /home/runner/.ssh/id_rsa
+          chmod 600 /home/runner/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.DEST_HOST }} >> /home/runner/.ssh/known_hosts
 
       # 3. Sync files directly using rsync
       - name: Sync Files with rsync
         run: |
           rsync -avz --delete \
-            -e "ssh -i ~/.ssh/id_rsa" \
+            -e "ssh -i /home/runner/.ssh/id_rsa" \
             src/ config/ deploy.sh \
             ${{ secrets.DEST_USER }}@${{ secrets.DEST_HOST }}:/var/www/my-app
