@@ -32,4 +32,4 @@ jobs:
           rsync -avz --delete \
             -e "ssh -i /home/runner/.ssh/id_rsa" \
             src/ config/ deploy.sh \
-            ${{ secrets.DEST_USER }}@${{ secrets.DEST_HOST }}:/var/www/my-app
+            ${{ secrets.DEST_USER }}@${{ secrets.DEST_HOST }}:/home/isaac/minecraft_datadriven_smp/mods
