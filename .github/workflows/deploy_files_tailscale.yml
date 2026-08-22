@@ -29,7 +29,7 @@ jobs:
       # 3. Sync files directly using rsync
       - name: Sync Files with rsync
         run: |
-          rsync -avz --delete \
+          rsync -Pavz --delete \
             -e "ssh -i /home/runner/.ssh/id_rsa" \
             src/ config/ deploy.sh \
             ${{ secrets.DEST_USER }}@${{ secrets.DEST_HOST }}:/home/isaac/minecraft_datadriven_smp/mods
