@@ -37,4 +37,29 @@ jobs:
             -e "ssh -i /home/runner/.ssh/id_rsa" \
             datapacks \
             ${{ secrets.DEST_USER }}@${{ secrets.DEST_HOST }}:/home/isaac/minecraft_datadriven_smp/world/
+      
+      # 4. Resource pack actions [Part 1 - Zip]
+      # 4.1
+      - name: RP - Install Zip
+        uses: montudor/action-zip@v1
+      
+      # 4.2
+      - name: RP - Make Zip File
+        run: zip -qq -r resourcepack.zip assets pack.mcmeta
+        working-directory: /home/runner/resourcepack/
+      
+      # 4.3
+      - name: RP - Calculate SHA-1
+        run: |
+          SHA_RESULT=$(sha1sum resourcepack/resourcepack.zip | awk '{print $1}')
+          echo "$SHA_RESULT" > resourcepack/resourcepack.sha 
+
+      # 4.4
+      - name: RP - Commit & Push Zip
+        run: |
+          git add resourcepack/resourcepack.zip resourcepack/resourcepack.sha
+          git commit -m "Update Resource Pack Zip File"
+          git push
+      
+      
 
