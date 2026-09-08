@@ -46,7 +46,7 @@ jobs:
       # 4.2
       - name: RP - Make Zip File
         run: zip -qq -r resourcepack.zip assets pack.mcmeta
-        working-directory: /home/runner/resourcepack/
+        working-directory: resourcepack
       
       # 4.3
       - name: RP - Calculate SHA-1
