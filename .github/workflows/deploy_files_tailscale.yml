@@ -53,7 +53,7 @@ jobs:
         run: |
           SHA_RESULT=$(sha1sum resourcepack/resourcepack.zip | awk '{print $1}')
           echo "$SHA_RESULT" > resourcepack/resourcepack.sha 
-          ssh -i /home/runner/.ssh/id_rsa" ${{ secrets.DEST_USER }}@${{ secrets.DEST_HOST }} 'sed -i "s/resource-pack-sha1=.*/resource-pack-sha1=$SHA_RESULT/"  minecraft_datadriven_smp/server.properties.bak'
+          ssh -i /home/runner/.ssh/id_rsa ${{ secrets.DEST_USER }}@${{ secrets.DEST_HOST }} "sed -i 's/resource-pack-sha1=.*/resource-pack-sha1=$SHA_RESULT/' minecraft_datadriven_smp/server.properties.bak"
 
 
       # 4.4
