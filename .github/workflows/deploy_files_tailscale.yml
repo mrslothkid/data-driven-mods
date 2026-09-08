@@ -49,10 +49,12 @@ jobs:
         working-directory: resourcepack
       
       # 4.3
-      - name: RP - Calculate SHA-1
+      - name: RP - Calculate and set SHA-1
         run: |
           SHA_RESULT=$(sha1sum resourcepack/resourcepack.zip | awk '{print $1}')
           echo "$SHA_RESULT" > resourcepack/resourcepack.sha 
+          ssh -i /home/runner/.ssh/id_rsa" ${{ secrets.DEST_USER }}@${{ secrets.DEST_HOST }} sed -i "s/resource-pack-sha1=.*/resource-pack-sha1=$SHA_RESULT/"  minecraft_datadriven_smp/server.properties.bak
+
 
       # 4.4
       - name: RP - Commit & Push Zip
