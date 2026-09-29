@@ -4,12 +4,16 @@ on:
   push:
     branches:
       - main
-
+  schedule:
+    - cron: '55 3 * * *'  # 03:55 UTC daily
+  workflow_dispatch:  # Manual trigger
+  
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
+        if: github.event_name != 'workflow_dispatch'
         uses: actions/checkout@v4
 
       # 1. Connect runner to Tailscale network using Auth Key
@@ -28,6 +32,7 @@ jobs:
 
       # 3. Sync files directly using rsync
       - name: Sync Files with rsync
+        if: github.event_name != 'workflow_dispatch'
         run: |
           rsync -Pavz --delete \
             -e "ssh -i /home/runner/.ssh/id_rsa" \
@@ -41,15 +46,18 @@ jobs:
       # 4. Resource pack actions [Part 1 - Zip]
       # 4.1
       - name: RP - Install Zip
+        if: github.event_name != 'workflow_dispatch'
         uses: montudor/action-zip@v1
       
       # 4.2
       - name: RP - Make Zip File
+        if: github.event_name != 'workflow_dispatch'
         run: zip -qq -r resourcepack.zip assets pack.mcmeta
         working-directory: resourcepack
       
       # 4.3
       - name: RP - Calculate and set SHA-1
+        if: github.event_name != 'workflow_dispatch'
         run: |
           SHA_RESULT=$(sha1sum resourcepack/resourcepack.zip | awk '{print $1}')
           echo "$SHA_RESULT" > resourcepack/resourcepack.sha 
@@ -58,6 +66,7 @@ jobs:
 
       # 4.4
       - name: RP - Commit & Push Zip
+        if: github.event_name != 'workflow_dispatch'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
