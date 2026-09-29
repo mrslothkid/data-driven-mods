@@ -66,5 +66,10 @@ jobs:
           git commit -m "Update Resource Pack Zip File"
           git push
       
-      
+      # 5. Post installation restart 
+      # 5.1
+      - name: Restart service
+        run: |
+          ssh -i /home/runner/.ssh/id_rsa ${{ secrets.DEST_USER }}@${{ secrets.DEST_HOST }} "systemctl restart minecraft-mountain --no-block"
+
 
