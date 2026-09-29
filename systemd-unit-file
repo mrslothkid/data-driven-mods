@@ -1,0 +1,54 @@
+# /etc/systemd/system/myservice.service 
+[Unit]
+Description=Minecraft Mountain
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+KillMode=none
+# Clear any default stop behavior
+ExecStop=
+
+# --- 5 Minute Warning ---
+ExecStop=/usr/local/bin/mcrcon -H localhost -P 25575 -p ${{ secrets.RCONPASSWORD }} "tellraw @a {\"color\":\"yellow\",\"text\":\"[Server] Restarting in 5 Minutes...\",\"underlined\":false}"
+ExecStop=/usr/bin/sleep 240
+
+# --- 1 Minute Warning ---
+ExecStop=/usr/local/bin/mcrcon -H localhost -P 25575 -p ${{ secrets.RCONPASSWORD }} "tellraw @a {\"color\":\"yellow\",\"text\":\"[Server] Restarting in 1 Minute...\",\"underlined\":false}"
+ExecStop=/usr/bin/sleep 30
+
+# --- 30 Second Warning ---
+ExecStop=/usr/local/bin/mcrcon -H localhost -P 25575 -p ${{ secrets.RCONPASSWORD }} "tellraw @a {\"color\":\"yellow\",\"text\":\"[Server] Restarting in 30 Seconds...\",\"underlined\":false}"
+ExecStop=/usr/bin/sleep 15
+
+# --- 15 Second Warning ---
+ExecStop=/usr/local/bin/mcrcon -H localhost -P 25575 -p ${{ secrets.RCONPASSWORD }} "tellraw @a {\"color\":\"yellow\",\"text\":\"[Server] Restarting in 15 Seconds...\",\"underlined\":false}"
+ExecStop=/usr/bin/sleep 10
+
+# --- Final Countdown (5, 4, 3, 2, 1) ---
+ExecStop=/usr/local/bin/mcrcon -H localhost -P 25575 -p ${{ secrets.RCONPASSWORD }} "tellraw @a {\"color\":\"red\",\"text\":\"[Server] Restarting in 5...\"}"
+ExecStop=/usr/bin/sleep 1
+ExecStop=/usr/local/bin/mcrcon -H localhost -P 25575 -p ${{ secrets.RCONPASSWORD }} "tellraw @a {\"color\":\"red\",\"text\":\"[Server] Restarting in 4...\"}"
+ExecStop=/usr/bin/sleep 1
+ExecStop=/usr/local/bin/mcrcon -H localhost -P 25575 -p ${{ secrets.RCONPASSWORD }} "tellraw @a {\"color\":\"red\",\"text\":\"[Server] Restarting in 3...\"}"
+ExecStop=/usr/bin/sleep 1
+ExecStop=/usr/local/bin/mcrcon -H localhost -P 25575 -p ${{ secrets.RCONPASSWORD }} "tellraw @a {\"color\":\"red\",\"text\":\"[Server] Restarting in 2...\"}"
+ExecStop=/usr/bin/sleep 1
+ExecStop=/usr/local/bin/mcrcon -H localhost -P 25575 -p ${{ secrets.RCONPASSWORD }} "tellraw @a {\"color\":\"red\",\"text\":\"[Server] Restarting in 1...\"}"
+ExecStop=/usr/bin/sleep 2
+
+# --- Graceful Shutdown ---
+ExecStop=/usr/local/bin/mcrcon -H localhost -P 25575 -p ${{ secrets.RCONPASSWORD }} "stop"
+
+TimeoutStopSec=360
+
+ExecStart=/usr/bin/java -Xmx5900M -jar fabric-server-launch.jar nogui
+User=isaac
+Group=isaac
+WorkingDirectory=/home/isaac/minecraft_datadriven_smp/
+
+[Install]
+WantedBy=multi-user.target
+
+~                                      
