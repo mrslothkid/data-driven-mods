@@ -70,6 +70,6 @@ jobs:
       # 5.1
       - name: Restart service
         run: |
-          ssh -i /home/runner/.ssh/id_rsa ${{ secrets.DEST_USER }}@${{ secrets.DEST_HOST }} "systemctl restart minecraft-mountain --no-block"
+          ssh -i /home/runner/.ssh/id_rsa ${{ secrets.DEST_USER }}@${{ secrets.DEST_HOST }} "sudo systemctl restart minecraft-mountain --no-block"
 
 
