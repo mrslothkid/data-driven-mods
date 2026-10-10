@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "noxiouseye:item/shattered_eye_a"
+    }
+}

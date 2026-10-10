@@ -1,0 +1,22 @@
+{
+  "eye_break": {
+    "sounds": [
+      "block/decorated_pot/shatter1",
+      "block/decorated_pot/shatter2",
+      "block/decorated_pot/shatter3",
+      "block/decorated_pot/shatter4",
+      "block/decorated_pot/shatter5"
+    ],
+    "subtitle": "noxiouseye.subtitles.eye_break"
+  },
+  "eye_hum": {
+    "sounds": [
+      {
+        "name": "block/beacon/ambient",
+        "volume": 1.5,
+        "pitch": 1.6
+      }
+    ],
+    "subtitle": "noxiouseye.subtitles.eye_hum"
+  }
+}
