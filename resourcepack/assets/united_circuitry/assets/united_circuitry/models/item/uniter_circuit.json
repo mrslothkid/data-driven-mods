@@ -1,6 +1,0 @@
-{
-    "parent":"minecraft:item/generated",
-    "textures":{
-        "layer0": "united_circuitry:item/uniter_circuit"
-    }
-}

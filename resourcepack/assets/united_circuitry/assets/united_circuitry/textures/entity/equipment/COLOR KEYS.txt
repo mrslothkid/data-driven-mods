@@ -1,5 +1,0 @@
-Green - Front
-Red - Inside
-Yellow - Outside
-Blue - Back
-Magenta - Top/Bottom
