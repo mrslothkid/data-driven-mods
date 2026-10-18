@@ -79,7 +79,9 @@ jobs:
       # 5. Post installation restart 
       # 5.1
       - name: Restart service
+        env:
+          SUDO_PASS: ${{ secrets.SUDO_PASSWORD }}
         run: |
-          ssh -i /home/runner/.ssh/id_rsa ${{ secrets.DEST_USER }}@${{ secrets.DEST_HOST }} "sudo -S systemctl restart minecraft-mountain.service --no-block"
+          ssh -i /home/runner/.ssh/id_rsa -o StrictHostKeyChecking=no ${{ secrets.DEST_USER }}@${{ secrets.DEST_HOST }} "sudo -S systemctl restart minecraft-mountain.service --no-block"
 
 
