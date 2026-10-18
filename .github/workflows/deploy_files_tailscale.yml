@@ -83,4 +83,5 @@ jobs:
           SUDO_PASS: ${{ secrets.SUDO_PASSWORD }}
           SUDO_USER_NAME: ${{ secrets.SUDO_USER }}
         run: |
-          ssh -i /home/runner/.ssh/id_rsa -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.DEST_HOST }} "echo '$SUDO_PASS' | sudo -S -u $SUDO_USER_NAME systemctl restart minecraft-mountain.service --no-block"
+          ssh -i /home/runner/.ssh/id_rsa -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.DEST_HOST }} "sudo systemctl restart minecraft-mountain.service --no-block"
+          
