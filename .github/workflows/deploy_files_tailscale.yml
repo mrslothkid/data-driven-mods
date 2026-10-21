@@ -74,7 +74,7 @@ jobs:
 
           git add resourcepack/resourcepack.zip resourcepack/resourcepack.sha
           git commit -m "Update Resource Pack Zip File"
-          git push
+          git push -f
       
       # 5. Post installation restart 
       # 5.1
