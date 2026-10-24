@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "nderham:item/scarlet_rune_transpose"
+	}
+}

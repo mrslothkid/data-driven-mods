@@ -1,0 +1,395 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "nderham:item/scarlet_rune_intent",
+		"particle": "nderham:item/scarlet_rune_intent"
+	},
+	"elements": [
+		{
+			"name": "scarlet_rune_intent_0",
+			"from": [-8.5, 7, -1.75],
+			"to": [-7.5, 10, 14.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [6, 0, 9, 1], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [6, 0, 9, 16], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [6, 15, 9, 16], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [9, 0, 6, 16], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [6, 0, 7, 16], "texture": "#0"},
+				"down": {"uv": [8, 0, 9, 16], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_1",
+			"from": [-8.5, 10, -0.75],
+			"to": [-7.5, 11, 13.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [5, 1, 6, 2], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [5, 1, 6, 15], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [5, 14, 6, 15], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [6, 1, 5, 15], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [5, 1, 6, 15], "texture": "#0"},
+				"down": {"uv": [5, 1, 6, 15], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_2",
+			"from": [-8.5, 5, -0.75],
+			"to": [-7.5, 7, 14.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [9, 1, 11, 2], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [9, 1, 11, 16], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [9, 15, 11, 16], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [11, 1, 9, 16], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [9, 1, 10, 16], "texture": "#0"},
+				"down": {"uv": [10, 1, 11, 16], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_3",
+			"from": [-8.5, 3, 0.25],
+			"to": [-7.5, 5, 11.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [11, 2, 13, 3], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [11, 2, 13, 13], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [11, 12, 13, 13], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [13, 2, 11, 13], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [11, 2, 12, 13], "texture": "#0"},
+				"down": {"uv": [12, 2, 13, 13], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_4",
+			"from": [-8.5, 11, 1.25],
+			"to": [-7.5, 12, 13.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [4, 3, 5, 4], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [4, 3, 5, 15], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [4, 14, 5, 15], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [5, 3, 4, 15], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [4, 3, 5, 15], "texture": "#0"},
+				"down": {"uv": [4, 3, 5, 15], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_5",
+			"from": [-8.5, 1, 1.25],
+			"to": [-7.5, 3, 7.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [13, 3, 15, 4], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [13, 3, 15, 9], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [13, 8, 15, 9], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [15, 3, 13, 9], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [13, 3, 14, 9], "texture": "#0"},
+				"down": {"uv": [14, 3, 15, 9], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_6",
+			"from": [-8.5, 0, 2.25],
+			"to": [-7.5, 1, 5.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [15, 4, 16, 5], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [15, 4, 16, 7], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [15, 6, 16, 7], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [16, 4, 15, 7], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [15, 4, 16, 7], "texture": "#0"},
+				"down": {"uv": [15, 4, 16, 7], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_7",
+			"from": [-8.5, 12, 3.25],
+			"to": [-7.5, 13, 12.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [3, 5, 4, 6], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [3, 5, 4, 14], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [3, 13, 4, 14], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [4, 5, 3, 14], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [3, 5, 4, 14], "texture": "#0"},
+				"down": {"uv": [3, 5, 4, 14], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_8",
+			"from": [-8.5, 13, 5.25],
+			"to": [-7.5, 14, 12.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [2, 7, 3, 8], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [2, 7, 3, 14], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [2, 13, 3, 14], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [3, 7, 2, 14], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [2, 7, 3, 14], "texture": "#0"},
+				"down": {"uv": [2, 7, 3, 14], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_9",
+			"from": [-8.5, 14, 7.25],
+			"to": [-7.5, 15, 11.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [1, 9, 2, 10], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [1, 9, 2, 13], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [1, 12, 2, 13], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [2, 9, 1, 13], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [1, 9, 2, 13], "texture": "#0"},
+				"down": {"uv": [1, 9, 2, 13], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_10",
+			"from": [-8.5, 2, 7.25],
+			"to": [-7.5, 3, 9.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [13, 9, 14, 10], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [13, 9, 14, 11], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [13, 10, 14, 11], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [14, 9, 13, 11], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [13, 9, 14, 11], "texture": "#0"},
+				"down": {"uv": [13, 9, 14, 11], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_11",
+			"from": [-8.5, 15, 9.25],
+			"to": [-7.5, 16, 11.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 11, 1, 12], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [0, 11, 1, 13], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [0, 12, 1, 13], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [1, 11, 0, 13], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [0, 11, 1, 13], "texture": "#0"},
+				"down": {"uv": [0, 11, 1, 13], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_12",
+			"from": [-8.5, 4, 11.25],
+			"to": [-7.5, 5, 13.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [11, 13, 12, 14], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [11, 13, 12, 15], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [11, 14, 12, 15], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [12, 13, 11, 15], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [11, 13, 12, 15], "texture": "#0"},
+				"down": {"uv": [11, 13, 12, 15], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_1",
+			"from": [23.5, 6, -1.75],
+			"to": [24.5, 9, 14.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [6, 0, 9, 1], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [9, 0, 6, 16], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [6, 15, 9, 16], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [6, 0, 9, 16], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [8, 0, 9, 16], "texture": "#0"},
+				"down": {"uv": [6, 0, 7, 16], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_2",
+			"from": [23.5, 5, -0.75],
+			"to": [24.5, 6, 13.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [5, 1, 6, 2], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [6, 1, 5, 15], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [5, 14, 6, 15], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [5, 1, 6, 15], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [5, 1, 6, 15], "texture": "#0"},
+				"down": {"uv": [5, 1, 6, 15], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_3",
+			"from": [23.5, 9, -0.75],
+			"to": [24.5, 11, 14.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [9, 1, 11, 2], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [11, 1, 9, 16], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [9, 15, 11, 16], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [9, 1, 11, 16], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [10, 1, 11, 16], "texture": "#0"},
+				"down": {"uv": [9, 1, 10, 16], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_4",
+			"from": [23.5, 11, 0.25],
+			"to": [24.5, 13, 11.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [11, 2, 13, 3], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [13, 2, 11, 13], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [11, 12, 13, 13], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [11, 2, 13, 13], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [12, 2, 13, 13], "texture": "#0"},
+				"down": {"uv": [11, 2, 12, 13], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_5",
+			"from": [23.5, 4, 1.25],
+			"to": [24.5, 5, 13.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [4, 3, 5, 4], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [5, 3, 4, 15], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [4, 14, 5, 15], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [4, 3, 5, 15], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [4, 3, 5, 15], "texture": "#0"},
+				"down": {"uv": [4, 3, 5, 15], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_6",
+			"from": [23.5, 13, 1.25],
+			"to": [24.5, 15, 7.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [13, 3, 15, 4], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [15, 3, 13, 9], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [13, 8, 15, 9], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [13, 3, 15, 9], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [14, 3, 15, 9], "texture": "#0"},
+				"down": {"uv": [13, 3, 14, 9], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_7",
+			"from": [23.5, 15, 2.25],
+			"to": [24.5, 16, 5.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [15, 4, 16, 5], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [16, 4, 15, 7], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [15, 6, 16, 7], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [15, 4, 16, 7], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [15, 4, 16, 7], "texture": "#0"},
+				"down": {"uv": [15, 4, 16, 7], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_8",
+			"from": [23.5, 3, 3.25],
+			"to": [24.5, 4, 12.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [3, 5, 4, 6], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [4, 5, 3, 14], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [3, 13, 4, 14], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [3, 5, 4, 14], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [3, 5, 4, 14], "texture": "#0"},
+				"down": {"uv": [3, 5, 4, 14], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_9",
+			"from": [23.5, 2, 5.25],
+			"to": [24.5, 3, 12.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [2, 7, 3, 8], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [3, 7, 2, 14], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [2, 13, 3, 14], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [2, 7, 3, 14], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [2, 7, 3, 14], "texture": "#0"},
+				"down": {"uv": [2, 7, 3, 14], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_10",
+			"from": [23.5, 1, 7.25],
+			"to": [24.5, 2, 11.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [1, 9, 2, 10], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [2, 9, 1, 13], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [1, 12, 2, 13], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [1, 9, 2, 13], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [1, 9, 2, 13], "texture": "#0"},
+				"down": {"uv": [1, 9, 2, 13], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_11",
+			"from": [23.5, 13, 7.25],
+			"to": [24.5, 14, 9.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [13, 9, 14, 10], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [14, 9, 13, 11], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [13, 10, 14, 11], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [13, 9, 14, 11], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [13, 9, 14, 11], "texture": "#0"},
+				"down": {"uv": [13, 9, 14, 11], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_12",
+			"from": [23.5, 0, 9.25],
+			"to": [24.5, 1, 11.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 11, 1, 12], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [1, 11, 0, 13], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [0, 12, 1, 13], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [0, 11, 1, 13], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [0, 11, 1, 13], "texture": "#0"},
+				"down": {"uv": [0, 11, 1, 13], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "scarlet_rune_intent_13",
+			"from": [23.5, 11, 11.25],
+			"to": [24.5, 12, 13.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [11, 13, 12, 14], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [12, 13, 11, 15], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [11, 14, 12, 15], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [11, 13, 12, 15], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [11, 13, 12, 15], "texture": "#0"},
+				"down": {"uv": [11, 13, 12, 15], "rotation": 180, "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "group",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [
+				{
+					"name": "scarlet_rune_intent",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+				},
+				{
+					"name": "scarlet_rune_intent",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"children": [13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+				}
+			]
+		}
+	]
+}
