@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "season=0": {
+      "model": "sereneseasons:block/season_sensor"
+    },
+    "season=1": {
+      "model": "sereneseasons:block/season_sensor_summer"
+    },
+    "season=2": {
+      "model": "sereneseasons:block/season_sensor_autumn"
+    },
+    "season=3": {
+      "model": "sereneseasons:block/season_sensor_winter"
+    }
+  }
+}
